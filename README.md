@@ -1,14 +1,16 @@
-OverTheWire - bandit
 
-https://overthewire.org/wargames/bandit/
+# OverTheWire - bandit
 
-Level 0
+
+[OverTheWire - bandit](https://overthewire.org/wargames/bandit/)
+
+### Level 0
 
 The goal of this level is for you to log into the game using SSH. The host to which you need to connect is bandit.labs.overthewire.org, on port 2220. The username is bandit0 and the password is bandit0. Once logged in, go to the Level 1 page to find out how to beat Level 1.
 ![image](https://user-images.githubusercontent.com/110773559/235846017-edb4b70c-915b-4e07-8480-15fa9eddee15.png)
 
 
-Level 0 -> Level 1
+### Level 0 -> Level 1
 
 The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
 I used the ‘ls’ command to view all the files list and ‘cat’ to execute all the information from the file. 
@@ -23,14 +25,14 @@ And I'm in!
 ![image](https://user-images.githubusercontent.com/110773559/235846259-7fd759ba-ba3b-48ca-ab25-71a0f3bb6304.png)
 
 
-Level 1 -> Level 2
+### Level 1 -> Level 2
 
 The password for the next level is stored in a file called - located in the home directory
 ![image](https://user-images.githubusercontent.com/110773559/235846337-d176ae64-46bf-492c-8bfe-05ab2fc1b224.png)
 
 As in the previous level, we ssh to the next user (bandit2) with the given password.
 
-Level 2 -> Level 3
+### Level 2 -> Level 3
 
 The password for the next level is stored in a file called spaces in this filename located in the home directory
 ![image](https://user-images.githubusercontent.com/110773559/235846462-e091de07-a236-4e8b-93a7-63a37e2a6f2e.png)
@@ -41,7 +43,7 @@ Now we ssh to bandit3 with this password
 
 We are in (:
 
-Level 3 -> Level 4
+### Level 3 -> Level 4
 
 The password for the next level is stored in a hidden file in the inhere directory.
 
@@ -52,7 +54,7 @@ And now we ssh to the next user
 ![image](https://user-images.githubusercontent.com/110773559/235846689-5c531fd9-d45d-4b9f-b17b-03ab267bad80.png)
 
 
-Level 4 -> Level 5
+### Level 4 -> Level 5
 
 The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
 ![image](https://user-images.githubusercontent.com/110773559/235846754-1191aeb8-594f-4ef2-964d-bd73c97436b0.png)
@@ -65,7 +67,7 @@ I figured out what type of file each one of them (because of the hint)
 And I already solved the challenge
 
 
-Level 5 -> Level 6
+### Level 5 -> Level 6
 
 The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
 human-readable
@@ -78,7 +80,7 @@ And we solved it!
 
 ![image](https://user-images.githubusercontent.com/110773559/235847028-43c1e604-10b1-4d5b-be7a-9511094403d0.png)
 
-Level 6 -> Level 7
+### Level 6 -> Level 7
 
 The password for the next level is stored somewhere on the server and has all of the following properties:
 owned by user bandit7
@@ -93,7 +95,7 @@ And I found:
 And here is the password:
 ![image](https://user-images.githubusercontent.com/110773559/235847232-2ecd4ed9-32fd-4bab-9aac-7c923cdad6a8.png)
 
-Level 7 -> Level 8
+### Level 7 -> Level 8
 
 The password for the next level is stored in the file data.txt next to the word millionth
 I checked the current directory
@@ -102,31 +104,31 @@ I checked the current directory
 I used ‘strings’ and ‘grep’ commands to view the password.  
 ![image](https://user-images.githubusercontent.com/110773559/235847343-996571c8-f88f-4ca9-ae67-d95314ab76ba.png)
 
-Level 8 -> Level 9
+### Level 8 -> Level 9
 
 The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
 ![image](https://user-images.githubusercontent.com/110773559/235847401-e68ecdd2-c961-4d4f-a128-31e01477f707.png)
 
-Level 9 -> Level 10
+### Level 9 -> Level 10
 
 The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
 ![image](https://user-images.githubusercontent.com/110773559/235847440-20aba5ea-f0c4-40d3-8be7-9545dce2d941.png)
 
 
-Level 10 -> Level 11
+### Level 10 -> Level 11
 
 The password for the next level is stored in the file data.txt, which contains base64 encoded data
 ![image](https://user-images.githubusercontent.com/110773559/235847567-05bcdd34-0468-4537-8b73-c24bd420d2ab.png)
 
 
-Level 11 -> Level 12
+### Level 11 -> Level 12
 
 The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
 
 ![image](https://user-images.githubusercontent.com/110773559/235848602-9e2a8bab-940d-461d-bda3-0a6e5150f3b4.png)
 
 
-Level 12 -> Level 13
+### Level 12 -> Level 13
 
 The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under /tmp in which you can work using mkdir. For example: mkdir /tmp/myname123. Then copy the datafile using cp, and rename it using mv (read the manpages!)
 As mentioned in the question make a new directory in /tmp and rename the file.
@@ -153,21 +155,21 @@ file3 is gzip compressed file so use the ‘zcat’ program to decompress it in 
 ![image](https://user-images.githubusercontent.com/110773559/235849539-be4f9455-2296-45d2-be01-e1c3913bb5dc.png)
 
 
-Level 13 -> Level 14
+### Level 13 -> Level 14
 
 The password for the next level is stored in /etc/bandit_pass/bandit14 and can only be read by user bandit14. For this level, you don’t get the next password, but you get a private SSH key that can be used to log into the next level. Note: localhost is a hostname that refers to the machine you are working on
 
 ![image](https://user-images.githubusercontent.com/110773559/235849640-21caf656-6616-424f-9d51-3f4e87951488.png)
 
 
-Level 14 -> Level 15
+### Level 14 -> Level 15
 
 The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
 
 ![image](https://user-images.githubusercontent.com/110773559/235849712-29f77f73-e919-498e-8042-4919e083005c.png)
 
 
-Level 15 -> Level 16
+### Level 15 -> Level 16
 
 The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL encryption.
 Helpful note: Getting “HEARTBEATING” and “Read R BLOCK”? Use -ign_eof and read the “CONNECTED COMMANDS” section on the manpage. Next to ‘R’ and ‘Q’, the ‘B’ command also works in this version of that command…
@@ -175,7 +177,7 @@ Helpful note: Getting “HEARTBEATING” and “Read R BLOCK”? Use -ign_eof an
 ![image](https://user-images.githubusercontent.com/110773559/235849772-907c7005-416c-41ee-a825-edf6125fe70e.png)
 
 
-Level 16 -> Level 17
+### Level 16 -> Level 17
 
 The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000. First, find out which of these ports have a server listening on them. Then find out which of those speak SSL and which don’t. There is only 1 server that will give the next credentials, the others will simply send back to you whatever you send to it.
 
@@ -203,7 +205,7 @@ And we are in!
 
 ![image](https://user-images.githubusercontent.com/110773559/235850438-1097f41c-6b83-4c2d-9514-8d7312396f33.png)
 
-Level 17 -> Level 18
+### Level 17 -> Level 18
 
 There are 2 files in the homedirectory: passwords.old and passwords.new. The password for the next level is in passwords.new and is the only line that has been changed between passwords.old and passwords.new
 
@@ -216,20 +218,20 @@ And we see the ‘Byebye!’ when we tried to log in
 ![image](https://user-images.githubusercontent.com/110773559/235850644-f9dcfd05-dc2c-4553-8226-62772a9b73af.png)
 
 
-Level 18 -> Level 19
+### Level 18 -> Level 19
 
 The password for the next level is stored in a file readme in the homedirectory. Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.
 
 ![image](https://user-images.githubusercontent.com/110773559/235850741-8a4eeeea-fa8b-40de-a017-749537264abf.png)
 
 
-Level 19 -> Level 20
+### Level 19 -> Level 20
 
 To gain access to the next level, you should use the setuid binary in the homedirectory. Execute it without arguments to find out how to use it. The password for this level can be found in the usual place (/etc/bandit_pass), after you have used the setuid binary.
 
 ![image](https://user-images.githubusercontent.com/110773559/235850871-9a8b938a-b40b-494d-886b-bf4d60f2c3a7.png)
 
-Level 20 -> Level 21
+### Level 20 -> Level 21
 
 There is a setuid binary in the homedirectory that does the following: it makes a connection to localhost on the port you specify as a commandline argument. It then reads a line of text from the connection and compares it to the password in the previous level (bandit20). If the password is correct, it will transmit the password for the next level (bandit21).
 NOTE: Try connecting to your own network daemon to see if it works as you think
@@ -251,14 +253,14 @@ I submitted my password for getting my password for the next level:
 ![image](https://user-images.githubusercontent.com/110773559/235851173-45c82c3a-2a7f-4064-b2e5-309429e5a6d4.png)
 
 
-Level 21 -> Level 22
+### Level 21 -> Level 22
 
 A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
 
 ![image](https://user-images.githubusercontent.com/110773559/235851238-7b3e4bec-ea08-4789-84df-683f78fa9972.png)
 
 
-Level 22 -> Level 23
+### Level 22 -> Level 23
 
 A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
 NOTE: Looking at shell scripts written by other people is a very useful skill. The script for this level is intentionally made easy to read. If you are having problems understanding what it does, try executing it to see the debug information it prints.
@@ -266,7 +268,7 @@ NOTE: Looking at shell scripts written by other people is a very useful skill. T
 ![image](https://user-images.githubusercontent.com/110773559/235851291-f1b49879-0a02-40dd-9406-ef21c18970fb.png)
 
 
-Level 23 -> Level 24
+### Level 23 -> Level 24
 
 A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in mks for the configuration and see what command is being executed.
 NOTE: This level requires you to create your own first shell-script. This is a very big step and you should be proud of yourself when you beat this level!
@@ -275,6 +277,7 @@ NOTE 2: Keep in mind that your shell script is removed once executed, so you may
 ![image](https://user-images.githubusercontent.com/110773559/235851388-5a7a6acd-4626-4aae-9456-f0176a2bde38.png)
 
 ![image](https://user-images.githubusercontent.com/110773559/235851463-f75498f9-d05d-4574-9cff-dd579d9b034b.png)
+
 
 
 
