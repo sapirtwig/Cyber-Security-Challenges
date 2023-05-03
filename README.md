@@ -5,43 +5,57 @@ https://overthewire.org/wargames/bandit/
 Level 0
 
 The goal of this level is for you to log into the game using SSH. The host to which you need to connect is bandit.labs.overthewire.org, on port 2220. The username is bandit0 and the password is bandit0. Once logged in, go to the Level 1 page to find out how to beat Level 1.
+![image](https://user-images.githubusercontent.com/110773559/235846017-edb4b70c-915b-4e07-8480-15fa9eddee15.png)
 
 
 Level 0 -> Level 1
 
 The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
 I used the ‘ls’ command to view all the files list and ‘cat’ to execute all the information from the file. 
+![image](https://user-images.githubusercontent.com/110773559/235846116-5eed15d5-9c50-45ea-95d2-d823e4571aad.png)
 
 Now, from here type ‘exit’ and SSH back into the next level by running
+![image](https://user-images.githubusercontent.com/110773559/235846201-f017d2d9-76f2-4007-93f0-879b6c3ea2b0.png)
 
 
 And I'm in!
 
+![image](https://user-images.githubusercontent.com/110773559/235846259-7fd759ba-ba3b-48ca-ab25-71a0f3bb6304.png)
 
 
 Level 1 -> Level 2
 The password for the next level is stored in a file called - located in the home directory
+![image](https://user-images.githubusercontent.com/110773559/235846337-d176ae64-46bf-492c-8bfe-05ab2fc1b224.png)
 
 As in the previous level, we ssh to the next user (bandit2) with the given password.
 Level 2 -> Level 3
 
 The password for the next level is stored in a file called spaces in this filename located in the home directory
+![image](https://user-images.githubusercontent.com/110773559/235846462-e091de07-a236-4e8b-93a7-63a37e2a6f2e.png)
 
 Now we ssh to bandit3 with this password
+![image](https://user-images.githubusercontent.com/110773559/235846532-74d9016f-48cd-4583-a4ea-c50b4a65c7a0.png)
+
 
 We are in (:
 Level 3 -> Level 4
 
 The password for the next level is stored in a hidden file in the inhere directory.
 
+![image](https://user-images.githubusercontent.com/110773559/235846615-38af6d86-0ccc-41bc-8347-2ac003bd3678.png)
 
 
 And now we ssh to the next user 
+![image](https://user-images.githubusercontent.com/110773559/235846689-5c531fd9-d45d-4b9f-b17b-03ab267bad80.png)
+
 
 Level 4 -> Level 5
 The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
+![image](https://user-images.githubusercontent.com/110773559/235846754-1191aeb8-594f-4ef2-964d-bd73c97436b0.png)
+
 
 I figured out what type of file each one of them (because of the hint) 
+![image](https://user-images.githubusercontent.com/110773559/235846853-92abe621-9c01-45cd-8eec-a62077558e9a.png)
 
 
 And I already solved the challenge
@@ -52,40 +66,45 @@ The password for the next level is stored in a file somewhere under the inhere d
 human-readable
 1033 bytes in size
 not executable
+![image](https://user-images.githubusercontent.com/110773559/235846947-201af1cf-2b8f-4da3-9d89-531b45e1f252.png)
+
 
 And we solved it! 
 
+![image](https://user-images.githubusercontent.com/110773559/235847028-43c1e604-10b1-4d5b-be7a-9511094403d0.png)
 
 Level 6 -> Level 7
 The password for the next level is stored somewhere on the server and has all of the following properties:
 owned by user bandit7
 owned by group bandit6
 33 bytes in size
+![image](https://user-images.githubusercontent.com/110773559/235847094-1a791801-99e1-4b9b-9a8d-322e4acbeb25.png)
 
 
 And I found:
-
-
-
-
+![image](https://user-images.githubusercontent.com/110773559/235847159-74313e30-b20e-431c-bad8-fffeb127abb2.png)
 
 And here is the password:
+![image](https://user-images.githubusercontent.com/110773559/235847232-2ecd4ed9-32fd-4bab-9aac-7c923cdad6a8.png)
 
 Level 7 -> Level 8
 The password for the next level is stored in the file data.txt next to the word millionth
 I checked the current directory
+![image](https://user-images.githubusercontent.com/110773559/235847299-99324271-df74-4529-a6d0-4dd789af0c42.png)
 
 I used ‘strings’ and ‘grep’ commands to view the password.  
+![image](https://user-images.githubusercontent.com/110773559/235847343-996571c8-f88f-4ca9-ae67-d95314ab76ba.png)
 
 Level 8 -> Level 9
 The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+![image](https://user-images.githubusercontent.com/110773559/235847401-e68ecdd2-c961-4d4f-a128-31e01477f707.png)
 
 Level 9 -> Level 10
 The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
+![image](https://user-images.githubusercontent.com/110773559/235847440-20aba5ea-f0c4-40d3-8be7-9545dce2d941.png)
 
-
-
-
+The password for the next level is stored in the file data.txt, which contains base64 encoded data
+![image](https://user-images.githubusercontent.com/110773559/235847567-05bcdd34-0468-4537-8b73-c24bd420d2ab.png)
 
 Level 10 -> Level 11
 The password for the next level is stored in the file data.txt, which contains base64 encoded data
